@@ -1,0 +1,53 @@
+:root {
+    --image-url: url('../images/bg/bg-3.jpg');
+  }
+.container {
+     /* Here's the trick */
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.8);
+
+    /* Basic background styles */
+    background: var(--image-url) center center;
+    background-size: cover;
+
+    /* Here's the same styles we applied to our content-div earlier */
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Add a transition, just for fun */
+    transition: box-shadow .3s ease-out;
+  }
+.container:hover {
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.8);
+}
+  
+  /* For demo only */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+h1 {
+    font-size: 3.7rem;
+    padding: 0;
+    margin: 0 0 20px 0px;
+}
+p {
+    padding:0;
+    margin: 0;
+    line-height: 1.5rem;
+}
+span{
+    color :#ed5656;;
+}
+img{
+    width: 300px;
+}
